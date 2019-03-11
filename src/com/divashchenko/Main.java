@@ -1,7 +1,5 @@
 package com.divashchenko;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,8 +16,8 @@ public class Main {
         }
 
         double ans = 0;
-        for (int i = 0; i < list.size(); i++) {
-            ans += (list.get(i) * list.get(i));
+        for (Integer integer : list) {
+            ans += (integer * integer);
         }
         ans /= list.size();
         System.out.println("Standard method: " + ans);
